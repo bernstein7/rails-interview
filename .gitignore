@@ -4,3 +4,4 @@ tmp/restart.txt
 tmp/sockets
 log/development.log
 .byebug_history
+.DS_Store
