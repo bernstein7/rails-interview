@@ -48,7 +48,7 @@ class QuestionsQueryTest < ActiveSupport::TestCase
       assert_equal nodes.size, Question.count
     end
 
-    test 'all questions have answers and user' do
+    test 'all questions have correct set of properties' do
       result = RailsInterviewSchema.execute(build_query)
       nodes = result['data']['questions']['edges']
 
