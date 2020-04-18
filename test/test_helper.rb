@@ -3,8 +3,13 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
 class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
+  setup do
+    Rails.application.load_seed
+  end
 
-  # Add more helper methods to be used by all tests here...
+  teardown do
+    User.delete_all
+    Question.delete_all
+    Answer.delete_all
+  end
 end
