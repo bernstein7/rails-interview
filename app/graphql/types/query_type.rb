@@ -3,9 +3,9 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    field :questions, Types::QuestionType.connection_type, null: false
+    field :questions, QuestionType.connection_type, null: false
 
-    def questions(**)
+    def questions
       Question.all
     end
   end
