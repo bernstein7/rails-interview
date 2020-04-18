@@ -72,6 +72,9 @@ GEM
       railties
       sprockets-rails
     graphql (1.10.7)
+    graphql-batch (0.4.2)
+      graphql (>= 1.3, < 2)
+      promise.rb (~> 0.7.2)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -95,6 +98,7 @@ GEM
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     pg (1.0.0)
+    promise.rb (0.7.4)
     public_suffix (3.0.2)
     puma (3.11.2)
     rack (2.0.4)
@@ -178,6 +182,7 @@ DEPENDENCIES
   ffaker
   graphiql-rails (~> 1.7)
   graphql (~> 1.10)
+  graphql-batch (~> 0.4)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
